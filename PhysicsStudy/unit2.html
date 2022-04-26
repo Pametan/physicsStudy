@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://latex.now.sh/style.min.css" />
+    <link rel="stylesheet" href="styles.css">
+
+
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+      };
+    </script>
+    <script id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a href="./index.html"><img src="homebutton.png" width="35px"></a>
+        <div class="header-units-dropdown">
+          <button class="header-units-dropbtn" type="button" name="button">Unidades</button>
+          <div class="header-units-dropdown-content">
+            <a href="./unit1.html">Unidad 1</a>
+            <a href="./unit2.html">Unidad 2</a>
+            <a href="./unit3.html">Unidad 3</a>
+            <a href="./unit4.html">Unidad 4</a>
+            <a href="./unit5.html">Unidad 5</a>
+            <a href="./unit6.html">Unidad 6</a>
+            <a href="./unit7.html">Unidad 7</a>
+            <a href="./unit8.html">Unidad 8</a>
+            <a href="./unit9.html">Unidad 9</a>
+            <a href="./unit10.html">Unidad 10</a>
+            <a href="./unit11.html">Unidad 11</a>
+            <a href="./unit12.html">Unidad 12</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <h1>Unidad 2: Mecanica</h1>
+    <div class="unit-blurb">
+      <h3>Introducción</h3>
+      <p>Todo se mueve. La tierra orbita alreador del sol y el sol orbita dentro de la via láctea. Esta unidad introduce como estudiar la mocion de estos objetos con la fisica.</p>
+    </div>
+
+    <div class="equations-blurb">
+      <h3>Equations</h3>
+      <ul>
+        <li>$v=u+at$</li>
+        <li>$s=ut+\frac{1}{2}at^2$</li>
+        <li>$v^2=u^2+2as$</li>
+        <li>$s=\frac{(v+u)t}{2}$</li>
+      </ul>
+    </div>
+
+    <div class="unit-main">
+      <h2>2.1 - Movimiento</h2>
+      <h3>Displacamiento y distancia</h3>
+      <img src="distance-vs-displacement.jpg" alt="">
+      <img src="distance-displacement-graph1.png" style="display: inline;" width="300px">
+      <img src="distance-displacement-graph2.png" style="display: inline;" width="240px">
+      <h3>Valores instantáneos y medios</h3>
+      <p>Definimos la rapidez como el cambio de displacamiento en terminos del tiempo. La rapidez instantania es el gradiente de una grafica displacamiento-tiempo. Esto es la rapidez en un momento especifico. Se puede escribir como $\frac{ds}{dt}$. $\frac{\Delta s}{\Delta t}$ es una medida de la rapidez media.</p>
+      <h3>Acceleración</h3>
+      <p>Acceleración se mide en $ms^{-2}$ y se puede describir como $\frac{\Delta v}{\Delta t}$ y $\frac{dv}{dt}$.</p>
+      <p>$$a=\frac{v-u}{t}$$</p>
+      <h3>Integración</h3>
+      <p>La area de una curva de una grafica velocidad-tiempo se puede medir como $v \times t = s$ </p>
+
+      <img src="velocity-time-area-graph.png" width="500px">
+      <h3>Ecuaciones SUVAT</h3>
+      <p>Son ecuaciones para acceleración constante.</p>
+      <img src="suvat-gradient-graph.png" alt="" width="400px">
+      <table>
+        <tr>
+          <th>Symbolo</th>
+          <th>Cantidad</th>
+        </tr>
+
+        <tr>
+          <td>s</td>
+          <td>displacamiento / distancia</td>
+        </tr>
+
+        <tr>
+          <td>u</td>
+          <td>velocidad inicial</td>
+        </tr>
+
+        <tr>
+          <td>v</td>
+          <td>velocidad</td>
+        </tr>
+
+        <tr>
+          <td>a</td>
+          <td>acceleración</td>
+        </tr>
+
+        <tr>
+          <td>t</td>
+          <td>tiempo</td>
+        </tr>
+      </table>
+
+      <p>Reorganizando la definicion de la acceleración sacamos</p>
+      <p>$$v=u+at$$</p>
+      <p>De la grafica, sacamos que la area del rectangulo es $u \times t$ y del triangulo es $\frac{1}{2} \times (v-u)t$. Asi que, la area total $s$ es </p>
+      <p>$$s=ut+\frac{1}{2}at^2$$</p>
+      <p>De la primera ecuacion puedemos sacar que $t=\frac{v-u}{a}$. Metiendo este valor en la segunda ecuacion.</p>
+      <p>$$s=\frac{u(v-u)}{a}+\frac{1}{2a}(v-u)^2$$</p>
+      <p>$$as=uv-u^2+\frac{v^2}{2}-\frac{2uv}{2}+\frac{u^2}{2}$$</p>
+      <p>$$2as=v^2-u^2$$</p>
+      <p>Asi que nuestra tercera ecuacion es:</p>
+      <p>$$v^2=u^2+2as$$</p>
+      <p>Y la cuarta ecuacion se puede obtener logicamente como:</p>
+      <p>$$s=(\frac{v+u}{2})t$$</p>
+      <h3>Cayendo Libremente</h3>
+      <p>$g$ es la acceleración por la gravidad en la tierra. La acceleración cambia significativamente dependiendo de donde estas en la tierra. Por ejemplo, en Kuala Lampur, $g=9,776 ms^{-2}$ y en Stockholm, $g=9,818 ms^{-2}$</p>
+      <aside class="">
+        <h4>Como midemos la gravidad?</h4>
+        <p>Mediendo la gravidad a mano puede ser dificil por que experimentos occuren muy rapido. La gravidad se puede medir con un sensor ultrasonido que detecta como de lejos están los objetos de él. Los datos de salida son una grafica distancia-tiempo. Con el gradiente, se puede calcular la velocidad y entonces la acceleración.</p>
+        <img src="mediendo-gravidad2.png" alt="" width="300px">
+      </aside>
+      <h3>Signo de $g$</h3>
+      <p>En esta unidad, para arriba es la direccion positiva. Asi que, como la acceleracion de gravidad va para abajo, $g$ tiene un signo negativo. Aqui hay las ecuaciones cinematicas reflejando esto para describir el movimiento vertical hasta el punto maximo.</p>
+      <p>$$0=u-gt$$</p>
+      <p>$$h=ut-\frac{1}{2}gt^2$$</p>
+      <p>$$0=u^2-2gh$$</p>
+      <p>Si quieres averiguar el tiempo para el movimiento total (al punto maximo y de vuelta a la tierra) tiene que ser $2t$</p>
+      <h3>Movimiento horizontal</h3>
+      <p>Asumimos que la tierra es sufficientemente grande que se puede considera plana y que no hay fricción. Gravidad actua solo verticalmente asi que la acceleracion horizontal es 0 y para sacar el movimiento podemos sumar el movimiento vertical y horizontal y tratarlos como valores independientes.</p>
+      <img src="projectile-basic.png" alt="" width="800px">
+      <h2>2.2 - Fuerzas</h2>
+      <h3>Leyes de Newton</h3>
+      <table>
+        <tr>
+          <th>Leyes</th>
+          <th>Definicion</th>
+        </tr>
+        <tr>
+          <td>Primera Ley</td>
+          <td>Un objeto continua esta estacionario o moverse a velocidad constante a no ser que actua una fuerza externa sobre el.</td>
+        </tr>
+        <tr>
+          <td>Segunda Ley</td>
+          <td>$F=m \times a$; $F$ se mide en newtons ($N$) que se puede representar como $kgms^{-2}$; masa es un escalar</td>
+        </tr>
+        <tr>
+          <td>Tercera Ley</td>
+          <td>Cada acción tiene una reacción igual y opuesta. Esto refiere a fuerzas.</td>
+        </tr>
+      </table>
+      <p>Midamos el caso de una bola en una mesa; hay una fuerza gravitacional en la bola para abajo. Asi que por la tercera ley de Newton habra una fuerza de reaccion. La bola deforma los atomos de la mesa muy ligeramente. Quita la bola y la mesa vuelva a ser plana. Hay una fuerza electrostatica entre los atomos que es la fuerza de reaccion.</p>
+      <h3>Diagrama de cuerpo libre</h3>
+      <img src="freebody.png" alt="" width="500px">
+      <br>
+      <img src="freebody2.png" alt="" width="800px">
+      <br>
+      <img src="freebody3.png" alt="">
+      <br>
+      <img src="freebody4.png" alt="">
+      <h3>Equilibrio traslacional</h3>
+      <p>Un objeto esta en equilibrio traslacional cuando no se mueve o esta a una velocidad constante. Por la primera y segundas leyes de Newton, esto significa que $F=0$</p>
+      <img src="translacional1.png" alt="">
+      <br>
+      <img src="translacional2.png" alt="">
+      <br>
+
+      <h3>Rozamiento</h3>
+      <p><b>Rozamiento estatica:</b>  no hay movimiento relativo entre las superficies</p>
+      <p><b>Rozamiento dinamica:</b>  cuando si hay movimiento relativo</p>
+      <p>El rozamiento occure porque superficies planas no son planas al nivel atomico. Los picos y las valles de los dos superficies se enlacen entre si y se necesita fuerza para de-enlazar las. Un lubricante llena las valles de una superficie y reducen friccion.</p>
+      <img src="rozamiento.png" alt="">
+      <h3>Rozamiento estatica</h3>
+      <p>El valor de la friccion estatica se puede sacar usando:</p>
+      <p>$$F_f \le \mu_s R$$</p>
+      <p>donde $F_f$ es la fuerza friccional ejercido por la superficie en el objeto. $R$ es la reaccion normal de la superficie en el bloque. Esto iguala el peso del bloque por que no hay acceleracion vetical. El simbolo $\mu_s$ es coefficiente de rozamiento estatica.</p>
+
+      <h3>Rozamiento dinamica</h3>
+      <p>$$F_f = \mu_d R$$</p>
+      <p>Los coefficientes de rozamiento dependen de el par de superficies. Tambien es posible que el coeficiente de rozamiento sea mayor que 1 para algunas pares de superficies. Esto ocurre cuando la friccion es muy fuerte y mayor que el peso del bloque.</p>
+      <h3>Resistencia del fluido y velocidad terminal</h3>
+      <p>Algunas veces resistencia del fluido es una variable significativa. Hay una fuerza de arrastre. Hay un punto donde la fuerza de arrastre es igual a la fuerza creada por la gravedad - esto ocurre en la velocidad terminal.</p>
+      <img src="Drag-Force.jpg" alt="">
+      <img src="terminal.png" alt="" width="500px">
+
+      <h2>2.3 - Trabajo, energia, y poder</h2>
+      <h3>Energia</h3>
+      <p>Energia se puede convertir de una forma de energia a otro. Usamos la unidad de joule (J) para energia.</p>
+      <table>
+        <tr>
+          <td>Joule</td>
+          <td>Un joule es la energia requerido cuando una fuerza de 1 newton actua sobre una distancia de 1 metro.</td>
+        </tr>
+      </table>
+      <p>El principio de conservacion de energia dice que energia no se puede crear ni destruir. En otras partes de fisica, otras unidades se usan por ejemplo el electronvoltio.</p>
+      <h3>Trabajo</h3>
+      <p>trabajo (en J) = fuerza (en N) $\times$ distancia en la direccion de la fuerza (en m)</p>
+      <p>Cuando un peso de $5 N$ se mueve verticalmente 150 m entonces el trabajo sera $5 \times 150 = 750 J$</p>
+      <p>$$W=F\cdot s$$</p>
+      <h3>Poder</h3>
+      <table>
+        <tr>
+          <td>Poder</td>
+          <td>tasa de trabajo; $\frac{\text{energia}}{\text{tiempo}}$</td>
+        </tr>
+      </table>
+      <p>Se mide el poder en watts (W); un watt es $1 Js^{-1}$</p>
+      <p>$$P=\frac{\text{trabajo}}{t}=\frac{Fs}{t}$$</p>
+      <p>$$P=Fv$$</p>
+
+      <h3>Energia Cinetica</h3>
+      <p>$$E_c=\frac{1}{2}m(v^2-u^2)$$</p>
+
+      <h3>Energia Potencial</h3>
+      <p>$$E_p = mg \times \Delta h$$</p>
+
+      <h3>Energía potencial elástica</h3>
+      <p><b>Ley de Hooke: </b> $F=k\Delta x$ donde $k$ es el constante elastico.</p>
+      <p>$$E_p = \frac{1}{2}k(\Delta x)^2$$</p>
+
+      <h3>Eficiencia</h3>
+      <p>Eficiencia = $\frac{\text{trabajo util fuera}}{\text{energia total dentro}}$</p>
+
+      <h2>2.4 - Impulso</h2>
+      <p>Se define como</p>
+      <p>$$p = m \times v$$</p>
+      <table>
+        <tr>
+          <td>impulso es masa por velocidad nunca masa por rapidez</td>
+        </tr>
+        <tr>
+          <td>impulso es un vector</td>
+        </tr>
+        <tr>
+          <td>tiene unidades de $kgms^{-1}$</td>
+        </tr>
+      </table>
+      <p>El impulso es constante si no hay fuerzas externas. Esto se conoce como el principio de conservacion de impulso linear.</p>
+
+      <h3>Dos objetos con la misma masa, una inicialmente estacionario sin perdida de energia</h3>
+      <p>Esto se conoce como energia elastica.</p>
+      <img src="elastica.png" alt="">
+      <p>El primer objeto choca con el segundo objeto. El primer objeto se para y segundo sigue con la velocidad de la primera. </p>
+      <p>Por la conservacion de impulso, $m_1u=m_2v$</p>
+      <p>$m_1=m_2$ entonces $u=v$.</p>
+
+      <h3>Dos objetos con diferentes masas, sin perdida de energia</h3>
+      <img src="elastica2.png" alt="">
+      <p>Otra vez,</p>
+      <p>$$m_1u_1+m_2u_2=m_1v_1+m_2v_2$$</p>
+      <p>Tambien, la energia cinetica se tiene que conservar.</p>
+      <p><b style="color: red;">Se tiene que hacer problemas de choques????</b> </p>
+
+      <h3>Dos objetos chocando con perdida de energia</h3>
+      <p>Esto es una collision inelastica. Esta vez la ecuacion del impulso es:</p>
+      <p>$$m_1u_1=(m_1+m_2)v_1$$</p>
+      <p><b style="color: red;">Mida si hay problemas sobre esto</b> </p>
+
+      <h3>Dos objetos chocando cuando se aumenta la energia</h3>
+      <p><b style="color: red;">Mida que se tiene que saber</b> </p>
+
+      <h3>Energia y impulso</h3>
+      <p>Existe una relacion entre la energia cinetica y el impulso.</p>
+      <p>$$E_c = \frac{p^2}{2m}$$</p>
+      <p>Tambien se nota que podemos reescribr la segunda ley de Newton usando el impulso como:</p>
+      <p>$$F=\frac{\Delta p}{\Delta t}$$</p>
+      <h3>Revisitando la segunda ley de Newton</h3>
+      <p>Usando $F=ma$ y $F=\frac{\Delta p}{\Delta t}$, sacamos</p>
+      <p>$$F=m\frac{\Delta v}{\Delta t} + v\frac{\Delta m}{\Delta t}$$</p>
+
+    </div>
+    <footer></footer>
+  </body>
+</html>
